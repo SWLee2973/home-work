@@ -98,9 +98,38 @@ html {
 }
 
 .contents-kamil {
-  background: yellowgreen;
+  /* background: yellowgreen; */
   width: 243px;
   float: left;
+  position: relative;
+}
+
+.kamil-logo {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 64px;
+}
+
+.kamil-desc {
+  display: block;
+  position: absolute;
+  top: 66px;
+  left: 21px;
+  width: 200px;
+  text-align: center;
+  color: var(--grayscale-gray-5, #555);
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+    
+}
+
+.kamil-product {
+  display: inline-block;
+  float: left;
+  margin: 100px 25px 14px 23px;
 }
 
 .contents-gomgom {
