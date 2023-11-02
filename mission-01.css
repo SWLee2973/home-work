@@ -25,6 +25,38 @@ html {
   border: 1px solid var(--blue-600, #0074E9);
 }
 
+.purchase {
+  position: absolute;
+  top: 248px;
+  left: 20px;
+  width: 42px;
+  height: 42px;
+  background-image: url(images/button.svg);
+}
+
+.purchase span {
+  display: inline-block;
+}
+
+.purchase:hover {
+  background: var(--blue-600, #0074E9);
+  background-image: url(images/angle-right.svg);
+  background-repeat: no-repeat;
+  background-position: 88px 16px;
+  width: 112px;
+  padding: 12px 18px 13px 20px; 
+}
+
+.purchase:hover::before {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 120%;
+  content:'구매하기';
+  color: var(--White, #FFF);
+  display: block;
+}
+
 .contents-ottogi {
   /* background: purple; */
   position: relative;
