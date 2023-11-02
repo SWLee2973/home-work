@@ -1,0 +1,33 @@
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.contents {
+  background: pink;
+  margin: 0 auto;
+  width: 502px;
+  margin-top: 200px;
+}
+
+.contents section {
+  border: 1px solid var(--gray-500, #C4C4C4);
+}
+
+.contents-ottogi {
+  background: purple;
+}
+
+.contents-kamil {
+  background: yellowgreen;
+  width: 243px;
+  float: left;
+}
+
+.contents-gomgom {
+  background: aqua;
+  width: 243px;
+  float: right;
+}
