@@ -14,11 +14,12 @@ html {
   /* background: pink; */
   margin: 0 auto;
   width: 502px;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .contents section {
   border: 1px solid var(--gray-500, #C4C4C4);
+  position: relative;
 }
 
 .contents section:hover {
@@ -59,7 +60,7 @@ html {
 
 .contents-ottogi {
   /* background: purple; */
-  position: relative;
+  /* position: relative; */
   margin-bottom: 16px;
   border: 1px solid var(--gray-500, #C4C4C4);
   display: flow-root;
@@ -101,7 +102,7 @@ html {
   /* background: yellowgreen; */
   width: 243px;
   float: left;
-  position: relative;
+  /* position: relative; */
 }
 
 .kamil-logo {
@@ -133,7 +134,34 @@ html {
 }
 
 .contents-gomgom {
-  background: aqua;
+  /* background: aqua; */
   width: 243px;
   float: right;
+}
+
+.gomgom-logo {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 64px;
+}
+
+.gomgom-desc {
+  display: block;
+  position: absolute;
+  top: 66px;
+  left:21px;
+  width: 200px;
+  text-align: center;
+  color: var(--grayscale-gray-5, #555);
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.gomgom-product {
+  display: inline-block;
+  float: left;
+  margin: 100px 25px 14px 23px;
 }
