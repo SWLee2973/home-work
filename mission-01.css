@@ -40,7 +40,8 @@ html {
   display: inline-block;
 } */
 
-.purchase:hover {
+.purchase:hover,
+.purchase:focus {
   background: var(--blue-600, #0074E9);
   background-image: url(images/angle-right.svg);
   background-repeat: no-repeat;
@@ -49,7 +50,8 @@ html {
   padding: 12px 18px 13px 20px; 
 }
 
-.purchase:hover::before {
+.purchase:hover::before,
+.purchase:focus::before {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
