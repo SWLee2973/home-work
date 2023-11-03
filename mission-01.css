@@ -33,11 +33,12 @@ html {
   width: 42px;
   height: 42px;
   background-image: url(images/button.svg);
+  text-decoration: none;
 }
 
-.purchase span {
+/* .purchase span {
   display: inline-block;
-}
+} */
 
 .purchase:hover {
   background: var(--blue-600, #0074E9);
