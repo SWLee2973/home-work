@@ -17,7 +17,7 @@
 > 상품이미지를 float를 사용해 최우측으로 밀고 margin을 사용해 위치 조절 <br />
 > 오뚜기 로고와 상품 설명은 position을 absolute로 지정하여 위치 조절
 
-![커밋3](./screenshot/commit3.png)
+![커밋3](./screenshot/commit3_.png)
 
 ## 4. 커밋4 - 구매하기 버튼 생성 및 디자인 변경
 * 구매하기 버튼 생성 및 hover 시 디자인 변경
@@ -50,3 +50,32 @@
 > focus 가상 요소에 속성 적용
 
 ![커밋7](./screenshot/commit7.png)
+
+## 8. 마크업 구조
+```
+<body>
+  <div class="contents">
+
+    <section class="contents-ottogi">
+      <img src="images/ottogi-logo.png" alt="오뚜기" class="ottogi-logo"/>
+      <span class="ottogi-desc">따뜻한 차 향기</span>
+      <img src="images/ottogi-product.png" alt="꿀생강차" class="ottogi-product"/>
+      <a href ="#" class="purchase" title="구매하기"></a>
+    </section>
+
+    <section class="contents-kamil">
+      <img src="images/kamil-logo.png" alt="카밀" class="kamil-logo" />
+      <span class="kamil-desc">핸드크림 모음</span>
+      <img src="images/kamil-product.png" alt="핸드크림 모음" class="kamil-product" />
+      <a href ="#" class="purchase" title="구매하기"></a></a>
+    </section>
+    
+    <section class="contents-gomgom">
+      <img src="images/gomgom-logo.png" alt="곰곰" class="gomgom-logo" />
+      <span class="gomgom-desc">고소한 보리차</span>
+      <img src="images/gomgom-product.png" alt="보리차" class="gomgom-product" />
+      <a href ="#" class="purchase" title="구매하기"></a></a>
+    </section>
+  </div>
+</body>
+```
