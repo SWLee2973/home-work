@@ -43,6 +43,7 @@ html {
 .purchase:hover,
 .purchase:focus {
   background: var(--blue-600, #0074E9);
+  transition: 200ms linear;
   background-image: url(images/angle-right.svg);
   background-repeat: no-repeat;
   background-position: 88px 16px;
