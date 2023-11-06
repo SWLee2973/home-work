@@ -67,14 +67,14 @@
       <img src="images/kamil-logo.png" alt="카밀" class="kamil-logo" />
       <span class="kamil-desc">핸드크림 모음</span>
       <img src="images/kamil-product.png" alt="핸드크림 모음" class="kamil-product" />
-      <a href ="#" class="purchase" title="구매하기"></a></a>
+      <a href ="#" class="purchase" title="구매하기"></a>
     </section>
     
     <section class="contents-gomgom">
       <img src="images/gomgom-logo.png" alt="곰곰" class="gomgom-logo" />
       <span class="gomgom-desc">고소한 보리차</span>
       <img src="images/gomgom-product.png" alt="보리차" class="gomgom-product" />
-      <a href ="#" class="purchase" title="구매하기"></a></a>
+      <a href ="#" class="purchase" title="구매하기"></a>
     </section>
   </div>
 </body>
