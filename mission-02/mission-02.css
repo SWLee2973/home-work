@@ -1,0 +1,13 @@
+/* 커피 이미지
+
+position: absolute;
+left: -165px;
+right: -164px;
+top: 50px;
+bottom: 0px;
+
+background: linear-gradient(180deg, rgba(51, 47, 43, 0.4) 38.26%, rgba(50, 46, 42, 0.1) 89.14%), url(image.png); */
+
+body {
+  background: url('images/coffee.svg') no-repeat;
+}
