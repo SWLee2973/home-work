@@ -173,6 +173,7 @@ input[type=checkbox] {
 input[type=checkbox]+label {
   color: var(--theme-color-white);
   font-size: 1.2rem;
+  font-weight: 300;
   display: block;
   position: absolute;
   top: 163px;
@@ -185,6 +186,7 @@ input[type=checkbox]+label::before {
   width: 16px;
   display: inline-block;
   vertical-align: -3px;
+  margin-right: 4px; 
 }
 
 input[type=checkbox]:checked+label::before {
@@ -193,10 +195,20 @@ input[type=checkbox]:checked+label::before {
 }
 
 /* 로그인 버튼 */
-.login-button {
+.button-wrap {
   position: absolute;
   top: 312px;
   left: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 15px;
+}
+
+.login-button {
+  /* position: absolute; */
+  /* top: 312px; */
+  /* left: 0; */
   border: 0;
   border-radius: 8px;
   width: 100%;
@@ -217,9 +229,9 @@ input[type=checkbox]:checked+label::before {
 }
 
 .sign-up {
-  position: absolute;
-  top: 375px;
-  left: 0;
+  /* position: absolute; */
+  /* top: 375px; */
+  /* left: 0; */
   border: 1px solid var(--theme-color-white);
   border-radius: 8px;
   width: 100%;
@@ -259,6 +271,7 @@ input[type=checkbox]:checked+label::before {
 
   .nav-content {
     width: 90%;
+    max-width: 740px;
   }
 
   .menu-list {
@@ -285,5 +298,33 @@ input[type=checkbox]:checked+label::before {
     & li:first-child {
       margin-top: 0;
     }
+  }
+
+  .main-content {
+    padding-top: 100px;
+  }
+
+  .login-wrap {
+    width: 60%;
+    max-width: 540px;
+    margin-top: 100px;
+  }
+
+  .button-wrap {
+    top: 243px;
+    flex-flow: row nowrap;
+    column-gap: 20px;
+  }
+
+  .login-button {
+    display: inline-block;
+    max-width: 260px;
+  }
+
+  .sign-up {
+    display: inline-block;
+    max-width: 260px;
+    top: 312px;
+    right: 0;
   }
 }

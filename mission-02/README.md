@@ -10,7 +10,7 @@
 > ```display: flex``` 를 이용하여 좌우 정렬하고, 뷰포트 크기에 따라 wrapper 크기를 조절하며 양 여백을 조절 <br />
 > 추가로 화면의 바탕 이미지를 삽입하였다.
 
-![헤더제작](./screenshot/commit2.gif)
+<img src="./screenshot/commit2.gif" width="100%" height="100%" alt="헤더제작" />
 
 ## 3. 모바일 로그인 페이지 반응형 동작 적용
 * 모바일 화면 기준 (max-width: 600px)에서 작은 화면이 나오도록 구성
@@ -19,4 +19,11 @@
 > shadow-box가 화면 축소 및 확대 시 테두리가 보이는 현상이..<br />
 > 자바스크립트 적용 시 로그인 버튼 disable로 적용 예정
 
-![모바일 로그인 페이지](./screenshot/commit3.gif)
+<img src="./screenshot/commit3.gif" width="100%" height="100%" alt="모바일 로그인 페이지" />
+
+## 4. 데스크탑 로그인 페이지 반응형 동작 적용
+* 데스크탑 화면 기준 (min-width: 600px)에서 큰 화면이 나오도록 구성
+> 이 과정에서 로그인/회원가입 버튼 마크업에 button-wrap div를 추가 <br />
+> flex로 버튼 정렬 재구성
+
+<img src="./screenshot/commit4.gif" width="100%" height="100%" alt="데스크탑 로그인 페이지" />
