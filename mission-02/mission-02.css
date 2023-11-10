@@ -36,6 +36,7 @@ h1, h2, p {
 
 .main {
   width: 100%;
+  min-width: 384px;
   height: 100vh;
   background: url('./images/coffee.svg') no-repeat;
   background-position-x: -330px;
@@ -43,6 +44,7 @@ h1, h2, p {
   /* background-color: aqua; */
 }
 
+/* 헤더 */
 .nav-bar {
   background-color: var(--theme-color-white);
   max-width: 600px;
@@ -54,6 +56,7 @@ h1, h2, p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-width: 384px;
   margin: 0 auto;
 }
 
@@ -87,16 +90,19 @@ h1, h2, p {
   font-weight: 600;
 }
 
+/* 메인 */
 .main-content {
   width: 85%;
+  
   margin: 0 auto;
-  background-color: yellow;
+  /* background-color: yellow; */
   padding-top: 70px;
 }
 
+/* 로그인 문구 */
 .welcome {
   color: var(--theme-color-white);
-  background-color: pink;
+  /* background-color: pink; */
   text-align: center;
 
   & h1 {
@@ -105,9 +111,9 @@ h1, h2, p {
   }
 
   & strong {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.8rem;
-    margin-top: 60px;
+    margin-top: 24px;
     display: flex;
     justify-content: center;
     height: 27px;
@@ -115,13 +121,64 @@ h1, h2, p {
   }
 
   & p {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    height: 18px;
+    align-items: center;
   }
+}
+
+/* 로그인 영역 */
+.login-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 114px;
+  width: 311px;
+
+  & input[type="email"],
+  & input[type="password"] {
+    width: 100%;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0.5px var(--theme-color-white);
+    color: var(--theme-color-white);
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 22px 8px 0 8px;
+  }
+
+  & input[type="email"]::placeholder,
+  & input[type="password"]::placeholder {
+    color: var(--theme-color-white);
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+
+  & input[type="password"] {
+    margin-top: 52px;
+  }
+
+}
+
+input[type="checkbox"] { 
+  background: url('images/checkbox-uncheck.svg');
+  /* display: none; */
+}
+
+label+input[type="checkbox"] {
+  display: inline-block;
+  line-height: 22px;
+  padding: 22px;
 }
 
 
 
+/* 반응형 - 데스크톱 */
 @media (min-width: 600px) {
   .main {
     background: url('./images/coffee.svg') no-repeat;
