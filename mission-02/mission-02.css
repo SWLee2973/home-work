@@ -60,7 +60,7 @@ h1, h2, p {
   margin: 0 auto;
 }
 
-.nav-bar img {
+.logo {
   margin-left: 18px;
 }
 
@@ -132,51 +132,118 @@ h1, h2, p {
 
 /* 로그인 영역 */
 .login-wrap {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   margin: 0 auto;
   margin-top: 114px;
   width: 311px;
-
-  & input[type="email"],
-  & input[type="password"] {
-    width: 100%;
-    height: 48px;
-    background-color: transparent;
-    border: none;
-    box-shadow: 0 0.5px var(--theme-color-white);
-    color: var(--theme-color-white);
-    font-weight: 300;
-    font-size: 1.6rem;
-    padding: 22px 8px 0 8px;
-  }
-
-  & input[type="email"]::placeholder,
-  & input[type="password"]::placeholder {
-    color: var(--theme-color-white);
-    font-weight: 300;
-    font-size: 1.8rem;
-  }
-
-  & input[type="password"] {
-    margin-top: 52px;
-  }
-
 }
 
-input[type="checkbox"] { 
+.login-wrap input[type=email],
+.login-wrap input[type=password] {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0.5px var(--theme-color-white);
+  color: var(--theme-color-white);
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding: 22px 8px 0 8px;
+}
+
+.login-wrap input[type=email]::placeholder,
+.login-wrap input[type=password]::placeholder {
+  color: var(--theme-color-white);
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.login-wrap input[type=password] {
+  margin-top: 52px;
+}
+
+/* 이메일 저장 체크박스 */
+input[type=checkbox] { 
+  display: none;
+}
+
+input[type=checkbox]+label {
+  color: var(--theme-color-white);
+  font-size: 1.2rem;
+  display: block;
+  position: absolute;
+  top: 163px;
+}
+
+input[type=checkbox]+label::before {
+  content: '';
   background: url('images/checkbox-uncheck.svg');
-  /* display: none; */
-}
-
-label+input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
   display: inline-block;
-  line-height: 22px;
-  padding: 22px;
+  vertical-align: -3px;
 }
 
+input[type=checkbox]:checked+label::before {
+  background: url('images/checkbox-check.svg');
+  align-self: center;
+}
 
+/* 로그인 버튼 */
+.login-button {
+  position: absolute;
+  top: 312px;
+  left: 0;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  height: 48px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--theme-color-blue);
+  padding: 0 15px;
+}
+
+.login-button img {
+  display: block;
+  float: right;  
+}
+
+.login-button .is-active {
+  color: var(--theme-color-blue);
+}
+
+.sign-up {
+  position: absolute;
+  top: 375px;
+  left: 0;
+  border: 1px solid var(--theme-color-white);
+  border-radius: 8px;
+  width: 100%;
+  height: 48px;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 14px 17px;
+  color: var(--theme-color-white);
+  background: transparent;
+  text-align: center;
+  line-height: 18px;
+  /* display: flow-root; */
+}
+
+.sign-up::after {
+  clear:both;
+  content: '';
+}
+
+.sign-up img {
+  /* display: block; */
+  float: right;
+
+}
 
 /* 반응형 - 데스크톱 */
 @media (min-width: 600px) {
