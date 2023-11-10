@@ -21,12 +21,16 @@ body *::before {
   list-style: none;
 }
 
+body {
+  background-color: var(--theme-color-white);
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-h1, h2 {
+h1, h2, p {
   margin: 0;
 }
 
@@ -41,6 +45,7 @@ h1, h2 {
 
 .nav-bar {
   background-color: var(--theme-color-white);
+  max-width: 600px;
 }
 
 .nav-content {
@@ -96,12 +101,22 @@ h1, h2 {
 
   & h1 {
     font-weight: 100;
-    font-size: 36px;
+    font-size: 3.6rem;
   }
 
   & strong {
     font-weight: 400;
-    font-size: 18;
+    font-size: 1.8rem;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    height: 27px;
+    align-items: center;
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 1.2rem;
   }
 }
 
@@ -112,6 +127,10 @@ h1, h2 {
     background: url('./images/coffee.svg') no-repeat;
     background-size: cover;
     width: 100%;
+  }
+
+  .nav-bar {
+    max-width: none;
   }
 
   .nav-content {

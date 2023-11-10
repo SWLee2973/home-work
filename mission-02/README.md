@@ -10,5 +10,4 @@
 > ```display: flex``` 를 이용하여 좌우 정렬하고, 뷰포트 크기에 따라 wrapper 크기를 조절하며 양 여백을 조절 <br />
 > 추가로 화면의 바탕 이미지를 삽입하였다.
 
-![커밋2](./screenshot/commit2-mobile.png)
-![커밋2](./screenshot/commit2-desktop.png)
+![커밋2](./screenshot/commit2.gif)
