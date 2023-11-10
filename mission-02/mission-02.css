@@ -3,6 +3,7 @@
   --theme-color-blue: #24388D;
   --theme-color-white: #fefefe;
   --theme-color-snow: #f5f5f5;
+  --theme-color-amber: #D2C9B6;
 }
 /* 기본 디자인 */
 html { 
@@ -206,9 +207,6 @@ input[type=checkbox]:checked+label::before {
 }
 
 .login-button {
-  /* position: absolute; */
-  /* top: 312px; */
-  /* left: 0; */
   border: 0;
   border-radius: 8px;
   width: 100%;
@@ -219,19 +217,18 @@ input[type=checkbox]:checked+label::before {
   padding: 0 15px;
 }
 
+.login-button.is-invalid {
+  color: var(--theme-color-amber);
+  background-color: var(--theme-color-white);
+  opacity: 0.8;
+}
+
 .login-button img {
   display: block;
   float: right;  
 }
 
-.login-button .is-active {
-  color: var(--theme-color-blue);
-}
-
 .sign-up {
-  /* position: absolute; */
-  /* top: 375px; */
-  /* left: 0; */
   border: 1px solid var(--theme-color-white);
   border-radius: 8px;
   width: 100%;
@@ -243,7 +240,6 @@ input[type=checkbox]:checked+label::before {
   background: transparent;
   text-align: center;
   line-height: 18px;
-  /* display: flow-root; */
 }
 
 .sign-up::after {
@@ -327,4 +323,9 @@ input[type=checkbox]:checked+label::before {
     top: 312px;
     right: 0;
   }
+}
+
+/* 자바스크립트 영향 is-invalid 등 디자인 */
+.is-active {
+  
 }

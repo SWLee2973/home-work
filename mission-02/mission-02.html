@@ -6,6 +6,7 @@
   <title>로그인</title>
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="mission-02.css" />
+  <script src="./js/mission-02.js" defer></script>
 </head>
 <body>
   <header class="nav-bar">
@@ -34,15 +35,15 @@
 
       <div class="login-wrap">
         <form action="/" class="login-form" method="post">
-          <input type="email" placeholder="이메일" />
-          <input type="password" placeholder="패스워드" />
+          <input type="email" placeholder="이메일" class="email-input" oninput="javascript:testEmail();activeInput()" />
+          <input type="password" placeholder="패스워드" class="pw-input" oninput="testEmail()" />
           <input type="checkbox" id="save-email"/>
           <label for="save-email">이메일 저장</label>
           
           <div class="button-wrap">
-            <button type="submit" class="login-button">
+            <button type="submit" class="login-button is-invalid">
               로그인
-              <img src="images/arrow-blue.svg" alt="" />
+              <img class="login-img" src="images/arrow-gray.svg" alt="" />
             </button>
             <a class="sign-up" href="/">
               회원가입
