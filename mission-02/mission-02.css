@@ -143,7 +143,8 @@ h1, h2, p {
 }
 
 .login-wrap input[type=email],
-.login-wrap input[type=password] {
+.login-wrap input[type=password],
+.login-wrap input[type=text] {
   width: 100%;
   height: 48px;
   background-color: transparent;
@@ -156,13 +157,15 @@ h1, h2, p {
 }
 
 .login-wrap input[type=email]::placeholder,
-.login-wrap input[type=password]::placeholder {
+.login-wrap input[type=password]::placeholder,
+.login-wrap input[type=text]::placeholder {
   color: var(--theme-color-white);
   font-weight: 300;
   font-size: 1.8rem;
 }
 
-.login-wrap input[type=password] {
+.login-wrap input[type=password],
+.login-wrap input[type=text] {
   margin-top: 52px;
 }
 
@@ -177,7 +180,7 @@ input[type=checkbox]+label {
   font-weight: 300;
   display: block;
   position: absolute;
-  top: 178px;
+  top: 170px;
 }
 
 input[type=checkbox]+label::before {
@@ -364,7 +367,40 @@ input[type=checkbox]:checked+label::before {
   font-size: 1.1rem;
 }
 
-.is-visible.email-validate > span,
-.is-visible.pw-validate > span {
+.check-input {
+  background: url('images/warn.svg');
+  width: 16px;
+  height: 16px;
+  top: -22px !important;
+  right: 5px;
+  left: auto !important;
+}
+
+.email-validate.is-active > .check-input,
+.pw-validate.is-active > .check-input {
   display: block;
+  background: url('images/checked.svg');
+}
+
+.is-visible.email-validate > span,
+.is-visible.pw-validate > span,
+.is-visible.pw-validate > button,
+.pw-validate.is-active > button {
+  display: block;
+}
+
+.pw-view {
+  background-color: transparent;
+  border: none;
+  display: none;
+  position: absolute;
+  background: url('images/password-view.svg');
+  width: 16px;
+  height: 16px;
+  top: -22px !important;
+  right: 26px;
+}
+
+.pw-view.is-onactive {
+  background: url('images/password-hidden.svg');
 }

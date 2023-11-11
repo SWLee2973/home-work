@@ -44,3 +44,87 @@
 > 이메일과 비밀번호가 조건에 모두 맞을 경우 로그인 버튼 활성화하도록 변경
 
 <img src="./screenshot/commit6.gif" width="100%" height="100%" alt="안내 문구 추가" />
+
+## 7. 이메일 / 패스워드 체크 이미지 및 비밀번호 보기 토글 적용
+* 이메일 / 패스워드의 입력 조건에 따른 이미지 변경 및 패스워드 보기 버튼 추가
+> 이메일, 패스워드 valid 결과에 체크/경고 이미지 추가<br />
+> 패스워드 보기 버튼을 클릭할 때마다 input 타입을 text와 password로 번갈아가면서 보여주도록 적용
+
+<img src="./screenshot/commit7.gif" width="100%" height="100%" alt="안내 문구 추가" />
+
+## 마크업
+```
+  <header class="nav-bar">
+
+    <div class="nav-content">
+      <a href="/">
+        <img src="./images/logo.svg" alt="EDIYA COFFEE" class="logo" />
+      </a>
+      <ul class="menu-list reset-list">
+        <li><a href="/">이디야 디자인</a></li>
+        <li><a class="is-focused" href="/">로그인</a></li>
+        <li><a href="/">회원가입</a></li>
+        <li><a href="/">이디야 음료</a></li>
+        <li><a href="/">이디야 뉴스</a></li>
+        <li><a href="/">매장찾기</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <main class="main">
+    <div class="main-content">
+      <div class="welcome">
+        <h1>로그인</h1>
+        <strong>Welcome, Ediya Coffee</strong>
+        <p>이디야커피에 오신 것을 환영합니다.</p>
+      </div>
+
+      <div class="login-wrap">
+        <form action="/" class="login-form" method="post">
+
+          <input type="email" id="email" class="email-input" required 
+                  oninput="validInput()" 
+                  onfocusin="activeEmail()" 
+                  onblur="isEnterInput()" />
+          <label for="email" class="email-placeholder">
+            <span>이메일</span>
+          </label>
+          <label for="email" class="email-validate">
+            <span>이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)</span>
+            <span class="check-input"></span>
+          </label>
+
+          <input type="password" id="pw" class="pw-input" 
+                  oninput="validInput()" 
+                  onfocusin="activePw()" 
+                  onblur="isEnterInput()" />
+          <label for="pw" class="pw-placeholder">
+            <span>패스워드</span>
+          </label>
+          <label for="pw" class="pw-validate">
+            <span>패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</span>
+            <button class="pw-view" type="button" onclick="pwView()" aria-label="비밀번호 보기"></button>
+            <span class="check-input"></span>
+          </label>
+
+          <input type="checkbox" id="save-email"/>
+          <label for="save-email">이메일 저장</label>
+          
+          <div class="button-wrap">
+            <button type="submit" class="login-button is-invalid">
+              로그인
+              <img class="login-img" src="images/arrow-gray.svg" alt="" />
+            </button>
+            <a class="sign-up" href="/">
+              회원가입
+              <img src="images/arrow-white.svg" alt="" />
+            </a>
+          </div>
+          
+        </form>
+      </div>
+
+    </div>
+  </main>
+```
