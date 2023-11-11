@@ -385,7 +385,7 @@ input[type=checkbox]:checked+label::before {
 .is-visible.email-validate > span,
 .is-visible.pw-validate > span,
 .is-visible.pw-validate > button,
-.pw-validate.is-active > button {
+.pw-validate.is-active > .pw-view {
   display: block;
 }
 
@@ -399,6 +399,7 @@ input[type=checkbox]:checked+label::before {
   height: 16px;
   top: -22px !important;
   right: 26px;
+  left: auto !important;
 }
 
 .pw-view.is-onactive {
