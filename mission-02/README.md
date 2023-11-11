@@ -85,7 +85,7 @@
 
           <input type="email" id="email" class="email-input" required 
                   oninput="validInput()" 
-                  onfocusin="activeEmail()" 
+                  onfocus="activeEmail()" 
                   onblur="isEnterInput()" />
           <label for="email" class="email-placeholder">
             <span>이메일</span>
@@ -97,14 +97,14 @@
 
           <input type="password" id="pw" class="pw-input" 
                   oninput="validInput()" 
-                  onfocusin="activePw()" 
+                  onfocus="activePw()" 
                   onblur="isEnterInput()" />
           <label for="pw" class="pw-placeholder">
             <span>패스워드</span>
           </label>
           <label for="pw" class="pw-validate">
             <span>패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</span>
-            <button class="pw-view" type="button" onclick="pwView()" aria-label="비밀번호 보기"></button>
+            <button class="pw-view" type="button" onclick="pwView()" tabindex="-1" aria-label="비밀번호 보기"></button>
             <span class="check-input"></span>
           </label>
 
