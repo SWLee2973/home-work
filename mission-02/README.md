@@ -27,3 +27,13 @@
 > flex로 버튼 정렬 재구성
 
 <img src="./screenshot/commit4.gif" width="100%" height="100%" alt="데스크탑 로그인 페이지" />
+
+## 5. 이메일 / 비밀번호 입력 폼 placeholder 이벤트 적용 및 로그인 버튼 활성/비활성 적용
+* 예시 영상과 같이 placeholder 이벤트 적용, 이메일과 비밀번호 입력에 따른 로그인 버튼 활성화
+> 기존 input태그에서 placeholer 속성 제거 후 label로 지정 <br />
+> label 하위 span태그 생성하여 위치 지정 및 애니메이션 css 추가 <br />
+> 포커스 되었을 경우 js로 ```is-focus``` 클래스를 추가하여 디자인 적용하도록 지정 <br />
+> 포커스 후 입력된 값이 없다면 다시 placeholder로 돌아오도록 적용
+> 이메일 정규식 매치와 비밀번호가 1글자 이상 입력됐을 경우 로그인 버튼 활성화
+
+<img src="./screenshot/commit5.gif" width="100%" height="100%" alt="입력 폼 기능 작동" />

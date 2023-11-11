@@ -152,7 +152,7 @@ h1, h2, p {
   color: var(--theme-color-white);
   font-weight: 300;
   font-size: 1.6rem;
-  padding: 22px 8px 0 8px;
+  padding: 22px 8px 2px 8px;
 }
 
 .login-wrap input[type=email]::placeholder,
@@ -177,7 +177,7 @@ input[type=checkbox]+label {
   font-weight: 300;
   display: block;
   position: absolute;
-  top: 163px;
+  top: 178px;
 }
 
 input[type=checkbox]+label::before {
@@ -326,6 +326,28 @@ input[type=checkbox]:checked+label::before {
 }
 
 /* 자바스크립트 영향 is-invalid 등 디자인 */
-.is-active {
-  
+.email-placeholder,
+.pwd-placeholder {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.email-placeholder > span,
+.pwd-placeholder > span {
+  position: absolute;
+  font-weight: 300;
+  color: var(--theme-color-white);
+  font-size: 1.8rem;
+  top: -25px;
+  left: 8px;
+  transition: top 0.2s ease, left 0.2s ease, font-size 0.2s ease;
+}
+
+.is-focus + .email-placeholder > span,
+.is-focus + .pwd-placeholder > span {
+  top: -40px;
+  left: 0;
+  font-size: 1.2rem;
 }

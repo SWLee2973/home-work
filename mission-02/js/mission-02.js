@@ -1,4 +1,4 @@
-let emailRegex = new RegExp('[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}');
+let emailRegex = new RegExp('^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$');
 let emailInput = document.querySelector('.email-input');
 let pwInput = document.querySelector('.pw-input');
 let loginButton = document.querySelector('.login-button');
@@ -12,7 +12,7 @@ let loginImg = document.querySelector('.login-img');
 
 }) ();
 
-function testEmail() {
+function validEmail() {
   if (emailRegex.test(emailInput.value) && (pwInput.value).length > 0) {
     loginButton.disabled=false;
     loginButton.classList.remove('is-invalid');
@@ -28,6 +28,20 @@ function testEmail() {
   }
 }
 
-function activeInput() {
+function activeEmail() {
+  emailInput.classList.add('is-focus');
+}
+
+function activePwd() {
+  pwInput.classList.add('is-focus');
   
+}
+
+function isEnterInput() {
+  if((emailInput.value).length == 0) {
+    emailInput.classList.remove('is-focus');
+  }
+  if((pwInput.value).length == 0) {
+    pwInput.classList.remove('is-focus');
+  }
 }

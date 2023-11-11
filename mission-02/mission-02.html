@@ -12,7 +12,9 @@
   <header class="nav-bar">
 
     <div class="nav-content">
-      <img src="./images/logo.svg" alt="EDIYA COFFEE" class="logo" />
+      <a href="/">
+        <img src="./images/logo.svg" alt="EDIYA COFFEE" class="logo" />
+      </a>
       <ul class="menu-list reset-list">
         <li><a href="/">이디야 디자인</a></li>
         <li><a class="is-focused" href="/">로그인</a></li>
@@ -35,8 +37,15 @@
 
       <div class="login-wrap">
         <form action="/" class="login-form" method="post">
-          <input type="email" placeholder="이메일" class="email-input" oninput="javascript:testEmail();activeInput()" />
-          <input type="password" placeholder="패스워드" class="pw-input" oninput="testEmail()" />
+
+          <input type="email" id="email" class="email-input" required oninput="validEmail()" onfocusin="activeEmail()" onblur="isEnterInput()" />
+          <label for="email" class="email-placeholder"><span>이메일</span></label>
+          <!-- <label for="email" class="email-validate">이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)</label> -->
+
+          <input type="password" id="pwd" class="pw-input" oninput="validEmail()" onfocusin="activePwd()" onblur="isEnterInput()" />
+          <label for="pwd" class="pwd-placeholder"><span>패스워드</span></label>
+          <!-- <label for="pwd" class="pwd-validate">패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</label> -->
+
           <input type="checkbox" id="save-email"/>
           <label for="save-email">이메일 저장</label>
           
