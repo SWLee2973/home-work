@@ -327,7 +327,9 @@ input[type=checkbox]:checked+label::before {
 
 /* 자바스크립트 영향 is-invalid 등 디자인 */
 .email-placeholder,
-.pwd-placeholder {
+.pw-placeholder,
+.email-validate,
+.pw-validate {
   display: block;
   position: relative;
   padding: 0;
@@ -335,7 +337,7 @@ input[type=checkbox]:checked+label::before {
 }
 
 .email-placeholder > span,
-.pwd-placeholder > span {
+.pw-placeholder > span {
   position: absolute;
   font-weight: 300;
   color: var(--theme-color-white);
@@ -346,8 +348,23 @@ input[type=checkbox]:checked+label::before {
 }
 
 .is-focus + .email-placeholder > span,
-.is-focus + .pwd-placeholder > span {
+.is-focus + .pw-placeholder > span {
   top: -40px;
   left: 0;
   font-size: 1.2rem;
+}
+
+.email-validate > span,
+.pw-validate > span {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: var(--theme-color-white);
+  font-size: 1.1rem;
+}
+
+.is-visible.email-validate > span,
+.is-visible.pw-validate > span {
+  display: block;
 }

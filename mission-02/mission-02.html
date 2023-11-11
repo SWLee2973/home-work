@@ -38,13 +38,13 @@
       <div class="login-wrap">
         <form action="/" class="login-form" method="post">
 
-          <input type="email" id="email" class="email-input" required oninput="validEmail()" onfocusin="activeEmail()" onblur="isEnterInput()" />
+          <input type="email" id="email" class="email-input" required oninput="validInput()" onfocusin="activeEmail()" onblur="isEnterInput()" />
           <label for="email" class="email-placeholder"><span>이메일</span></label>
-          <!-- <label for="email" class="email-validate">이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)</label> -->
+          <label for="email" class="email-validate"><span>이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)</span></label>
 
-          <input type="password" id="pwd" class="pw-input" oninput="validEmail()" onfocusin="activePwd()" onblur="isEnterInput()" />
-          <label for="pwd" class="pwd-placeholder"><span>패스워드</span></label>
-          <!-- <label for="pwd" class="pwd-validate">패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</label> -->
+          <input type="password" id="pw" class="pw-input" oninput="validInput()" onfocusin="activePw()" onblur="isEnterInput()" />
+          <label for="pw" class="pw-placeholder"><span>패스워드</span></label>
+          <label for="pw" class="pw-validate"><span>패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</span></label>
 
           <input type="checkbox" id="save-email"/>
           <label for="save-email">이메일 저장</label>

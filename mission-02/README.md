@@ -37,3 +37,10 @@
 > 이메일 정규식 매치와 비밀번호가 1글자 이상 입력됐을 경우 로그인 버튼 활성화
 
 <img src="./screenshot/commit5.gif" width="100%" height="100%" alt="입력 폼 기능 작동" />
+
+## 6. 이메일 / 비밀번호 validate 문구 적용
+* 이메일 및 비밀번호가 조건에 맞지 않을 경우 경고 문구 표시
+> placeholder와 마찬가지로 label > span을 이용하여 is-visible 클래스 제어
+> 이메일과 비밀번호가 조건에 모두 맞을 경우 로그인 버튼 활성화하도록 변경
+
+<img src="./screenshot/commit6.gif" width="100%" height="100%" alt="안내 문구 추가" />
