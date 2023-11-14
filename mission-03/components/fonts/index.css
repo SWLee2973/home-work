@@ -1,0 +1,24 @@
+.component-list {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.title-xs { font-size: 22px; font-style: normal; font-weight: 700; line-height: 120%; color: var(--black, #010101); }
+.title-s { font-size: 24px; font-style: normal; font-weight: 700; line-height: 120%; color: var(--black, #010101); }
+.title-n { font-size: 28px; font-style: normal; font-weight: 700; line-height: 120%; color: var(--black, #010101); }
+.title-l { font-size: 34px; font-style: normal; font-weight: 700; line-height: 120%; color: var(--black, #010101); }
+.title-xl { font-size: 48px; font-style: normal; font-weight: 700; line-height: 120%; color: var(--black, #010101); letter-spacing: -0.024px;}
+.title-xxl { font-size: 60px; font-style: normal; font-weight: 700; line-height: 120%; color: var(--black, #010101); letter-spacing: -0.03px;}
+
+.text-xs { font-size: 12px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.006px; }
+.text-s { font-size: 14px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.007px; }
+.text-n { font-size: 16px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.008px; }
+.text-l { font-size: 18px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.009px; }
+.text-xl { font-size: 20px; font-style: normal; font-weight: 400; line-height: 150%; letter-spacing: -0.01px; }
+
+.text-xs-bold { font-size: 12px; font-style: normal; font-weight: 700; line-height: 150%; letter-spacing: -0.006px; }
+.text-s-bold { font-size: 14px; font-style: normal; font-weight: 700; line-height: 150%; letter-spacing: -0.007px; }
+.text-n-bold { font-size: 16px; font-style: normal; font-weight: 700; line-height: 150%; letter-spacing: -0.008px; }
+.text-l-bold { font-size: 18px; font-style: normal; font-weight: 700; line-height: 150%; letter-spacing: -0.009px; }
+.text-xl-bold { font-size: 20px; font-style: normal; font-weight: 700; line-height: 150%; letter-spacing: -0.01px; }
