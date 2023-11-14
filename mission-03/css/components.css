@@ -1,2 +1,4 @@
 /* 폰트 스타일 */
 @import '../components/fonts/index.css';
+/* 로고 스타일 */
+@import '../components/logos/index.css';

@@ -1,0 +1,23 @@
+.component-list {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1.5rem;
+  padding: 2rem;
+}
+
+.logo-wrapper {
+  background-color: #000;
+}
+
+.red-logo,
+.white-logo {
+  display: block;
+  width: 5em;
+}
+
+@media (min-width: 768px) {
+  .red-logo,
+  .white-logo {
+    width: 8.75em;
+  }
+}
