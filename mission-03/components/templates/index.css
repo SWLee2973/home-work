@@ -1,5 +1,6 @@
 .component-list {
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1.5rem;
+  padding: 2rem;
 }

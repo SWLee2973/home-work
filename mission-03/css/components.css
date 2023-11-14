@@ -2,3 +2,5 @@
 @import '../components/fonts/index.css';
 /* 로고 스타일 */
 @import '../components/logos/index.css';
+/* 버튼 스타일 */
+@import '../components/buttons/index.css';

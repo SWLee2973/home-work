@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>버튼 템플릿</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <div class="component-list">
+    <!-- 로그인 버튼 -->
+    <div class="button-wrapper">
+      <a href="#" class="button login-button">
+        로그인
+      </a>
+    </div>
+
+    <!-- 왼쪽 화살표 버튼 -->
+    <div class="button-wrapper">
+      <button type="submit" class="button normal-button">
+        <span class="left-arrow"></span>버튼
+      </button>
+    </div>
+
+    <!-- 오른쪽 화살표 버튼 -->
+    <div class="button-wrapper">
+      <button type="submit" class="button normal-button">
+        버튼<span class="right-arrow"></span>
+      </button>
+    </div>    
+
+    <!-- 왼쪽 화살표 비활성 버튼 -->
+    <div class="button-wrapper">
+      <button type="submit" class="button normal-button is--disabled" tabindex="-1">
+        <span class="left-arrow"></span>버튼
+      </button>
+    </div>
+
+    <!-- 오른쪽 화살표 비활성 버튼 -->
+    <div class="button-wrapper">
+      <button type="submit" class="button normal-button is--disabled" tabindex="-1">
+        버튼<span class="right-arrow"></span>
+      </button>
+    </div>    
+  </div>
+</body>
+</html>

@@ -2,6 +2,12 @@ body {
   font-family: 'SUIT Variable', Arial, Helvetica, sans-serif;
 }
 
+body *,
+body *:after,
+body *:before {
+  box-sizing: border-box;
+}
+
 a {
   color: inherit;
   text-decoration: none;
