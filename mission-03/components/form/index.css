@@ -3,7 +3,6 @@
   flex-flow: column nowrap;
   row-gap: 1.5rem;
   padding: 2rem;
-  background-color: #000;
 }
 
 .form-wrapper {
@@ -121,5 +120,19 @@
       display: block;
       top: 65px;
       left: 20px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .join-email {
+    background-color: #fff;
+    color: var(--gray--800);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .join-email {
+    background-color: var(--gray--800);
+    color: var(--gray--300);
   }
 }
