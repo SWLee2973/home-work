@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" />
+  <title>메인 컴포넌트 템플릿</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script src="../../mission-03.js" defer></script>
+</head>
+<body>
+  <div class="component-list">
+    <main class="main">
+      <h2 class="sr-only">프로모션 안내</h2>
+      <div class="main-info">
+        <em>영화, TV 프로그램을 무제한으로.</em>
+        <p>
+          <span>다양한 디바이스에서 시청하세요.</span>
+          <span>언제든 해지하실 수 있습니다.</span>
+        </p>
+        <p>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
+      </div>
+      <div class="form-wrapper">
+        <form action="#" class="join-form" method="get">
+          <label for="join-email" class="join-email-label">이메일 주소</label>
+          <input type="email" name="join-email" id="join-email" class="join-email" 
+                  oninput="validInput()"
+                  onfocus="activeEmail()"
+                  onblur="isEnterInput()" />
+          <span class="warn-message">정확한 이메일 주소를 입력하세요.</span>
+          <div class="button-wrapper">
+            <button type="submit" class="button normal-button">
+              30일 무료 이용<span class="right-arrow"></span>
+            </button>
+          </div>    
+        </form>
+      </div>
+      <p>신규 회원만 이 프로모션을 이용하실 수 있습니다.</p>
+    </main>
+  </div>
+</body>
+</html>

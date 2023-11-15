@@ -10,3 +10,5 @@
 @import '../components/form/index.css';
 /* 헤더 스타일 */
 @import '../components/header/index.css';
+/* 메인 스타일 */
+@import '../components/main/index.css';
