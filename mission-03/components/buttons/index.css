@@ -52,16 +52,20 @@
 /* 기본 버튼 스타일 */
 .normal-button {
   font-size: var(--title--x-small);
-  padding: 15px 20px;
+  padding: 9px 20px;
+  border-radius: 30px;
 
   &.is--disabled {
     background-color: var(--gray--500);
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
 /* 화살표 버튼 */
 .left-arrow {
-    content: '';
     display: inline-block;
     background-image: url('../../assets/left-arrow.svg');
     width: 22px;
@@ -70,10 +74,17 @@
 }
 
 .right-arrow {
-  content: '';
   display: inline-block;
   background-image: url('../../assets/right-arrow.svg');
   width: 22px;
   height: 14px;
   margin-left: 10px;
+}
+
+/* 데스크탑 화면 버튼 */
+@media (min-width: 768px) {
+  .normal-button {
+    padding: 17px 20px;
+    border-radius: 0;
+  }
 }

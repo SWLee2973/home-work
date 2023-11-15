@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>언어 선택 박스 컴포넌트 템플릿</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+  <div class="component-list">
+    
+    <!-- 기본 선택 박스 -->
+    <div class="select-wrapper">
+      <span class="lang-icon"></span>
+      <label for="lang-select" class="sr-only">언어 선택</label>
+      <select name="lang-select"
+                id="lang-select"
+              class="lang-select">
+        <optgroup>
+          <option value="ko" selected>한국어</option>
+          <option value="en">English</option>
+        </optgroup>
+      </select>
+    </div>
+  </div>
+</body>
+</html>

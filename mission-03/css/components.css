@@ -4,3 +4,5 @@
 @import '../components/logos/index.css';
 /* 버튼 스타일 */
 @import '../components/buttons/index.css';
+/* 언어 선택 박스 스타일 */
+@import '../components/lang/index.css';
