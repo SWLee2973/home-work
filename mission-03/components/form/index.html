@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" />
+  <title>폼 컴포넌트 템플릿</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script src="../../mission-03.js" defer></script>
+</head>
+<body>
+  <div class="component-list">
+    <div class="form-wrapper">
+      <form action="#" class="join-form" method="get">
+        <label for="join-email" class="join-email-label">이메일 주소</label>
+        <input type="email" name="join-email" id="join-email" class="join-email" 
+                oninput="validInput()"
+                onfocus="activeEmail()"
+                onblur="isEnterInput()" />
+        <span class="warn-message">정확한 이메일 주소를 입력하세요.</span>
+        <div class="button-wrapper">
+          <button type="submit" class="button normal-button">
+            30일 무료 이용<span class="right-arrow"></span>
+          </button>
+        </div>    
+      </form>
+    </div>
+  </div>
+</body>
+</html>

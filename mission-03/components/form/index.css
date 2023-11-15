@@ -1,0 +1,125 @@
+.component-list {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1.5rem;
+  padding: 2rem;
+  background-color: #000;
+}
+
+.form-wrapper {
+  width: 245px;
+
+}
+
+.join-form {
+  display: grid;
+  position: relative;
+  row-gap: 12px;
+  
+  & .button-wrapper {
+    justify-self: center;
+  }
+}
+
+.join-email {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 20px 9px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.007px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.join-email-label {
+  color: var(--gray--500);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5; /* 18px */
+  letter-spacing: -0.006px;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.is--focus .join-email-label {
+  top: -20px;
+  left: 18px;
+  color: var(--red--500);
+}
+
+.warn-message {
+  display: none;
+  color: var(--red--500);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5; 
+  letter-spacing: -0.007px;
+  position: absolute;
+}
+
+.join-form.is--invalid {
+  row-gap: 25px;
+
+  & .join-email {
+    outline: 3px solid var(--red--500);
+  }
+
+  & .warn-message {
+    display: block;
+    top: 42px;
+    left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-wrapper {
+    width: clamp(600px, 80%, 750px);
+  }
+
+  .join-form {
+    grid-template-columns: 1fr auto;
+  }
+
+  .join-email {
+    border-radius: 0;
+    height: 60px;
+    padding: 26px 20px 10px;
+    font-size: 16px;
+  }
+
+  .join-email-label {
+    top: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.008px;
+  }
+
+  .is--focus .join-email-label {
+    top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.006px;
+  }
+
+  .join-form.is--invalid .join-email {
+    outline: 0;
+    border-bottom: 3px solid var(--red--500);
+  }
+
+  .join-form.is--invalid .warn-message {
+      display: block;
+      top: 65px;
+      left: 20px;
+  }
+}

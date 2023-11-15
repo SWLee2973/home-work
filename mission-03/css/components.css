@@ -6,3 +6,5 @@
 @import '../components/buttons/index.css';
 /* 언어 선택 박스 스타일 */
 @import '../components/lang/index.css';
+/* 폼 스타일 */
+@import '../components/form/index.css';
