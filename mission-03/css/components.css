@@ -8,3 +8,5 @@
 @import '../components/lang/index.css';
 /* 폼 스타일 */
 @import '../components/form/index.css';
+/* 헤더 스타일 */
+@import '../components/header/index.css';

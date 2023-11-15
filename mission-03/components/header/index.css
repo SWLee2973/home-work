@@ -1,0 +1,23 @@
+.component-list {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1.5rem;
+  padding: 2rem;
+  background-color: black;
+}
+
+.header {
+  background: transparent;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  padding: 10px 25px;
+  min-width: 325px;
+  column-gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 20px 65px;
+    min-width: 750px;
+  }
+}
