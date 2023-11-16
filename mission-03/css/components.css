@@ -12,3 +12,5 @@
 @import '../components/header/index.css';
 /* 메인 스타일 */
 @import '../components/main/index.css';
+/* 푸터 스타일 */
+@import '../components/footer/index.css';
