@@ -8,6 +8,7 @@
 .footer {
   background-color: #000;
   color: #fff;
+  border-top: 2px solid var(--gray--700);
   padding: 40px 25px;
 }
 
@@ -68,6 +69,10 @@
 }
 
 @media (min-width: 768px) {
+  .footer {
+    padding: 46px 200px;
+  }
+
   .footer .footer-info {
     column-gap: 0.5em;
   }

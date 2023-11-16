@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.98) 45%), url('./assets/background.png') lightgray 50% / cover no-repeat;
+  /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%), url(./assets/background.png);
+  background-color: lightgray;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+
+}
+
+.main {
+  flex-grow: 1;
+}

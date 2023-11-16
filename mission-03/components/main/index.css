@@ -6,12 +6,12 @@
 }
 
 .main {
-  background-color: #000;
   color: #fff;
-  padding: 20px 55px;
+  padding: 20px 18px 68px;
   display: grid;
   justify-items: center;
   row-gap: 24px;
+  background: var(--black);
 }
 
 .main-info {
@@ -26,6 +26,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.2;
+  padding: 0 20px;
 }
 
 .main-info p {
@@ -43,9 +44,10 @@
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.007px;
+  padding: 0 40px;
 }
 
-.main p:last-child {
+.main .limit {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -54,7 +56,8 @@
 
 @media (min-width: 768px) {
   .main {
-    padding: 57px 120px;
+    padding: 57px 120px 200px;
+    background: transparent;
   }
 
   .main-info {
@@ -79,7 +82,7 @@
     letter-spacing: -0.008px;
   }
 
-  .main p:last-child {
+  .main .limit {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: -0.008px;

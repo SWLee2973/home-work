@@ -9,14 +9,14 @@
   background: transparent;
   display: grid;
   grid-template-columns: 1fr auto auto;
-  padding: 10px 25px;
+  padding: 20px 25px;
   min-width: 325px;
   column-gap: 16px;
 }
 
 @media (min-width: 768px) {
   .header {
-    padding: 20px 65px;
+    padding: clamp(20px, 50%, 40px) clamp(65px, 32.5%, 200px);
     min-width: 750px;
   }
 }
