@@ -67,6 +67,7 @@
   .main-info em {
     font-size: 60px;
     max-width: 518px;
+    padding: 0 10px;
   }
 
   .main-info p {
