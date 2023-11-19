@@ -16,7 +16,7 @@
 
 .lang-icon {
   position: absolute;
-  background: url('../../assets/global.svg') no-repeat;
+  background: url('../../images/global.svg') no-repeat;
   width: 16px;
   height: 16px;
   top: 5.5px;
@@ -30,7 +30,7 @@
   border-radius: 2px;
   appearance: none;
   color: var(--gray--500);
-  background: url('../../assets/bi_caret-down-fill.svg') no-repeat 90%;
+  background: url('../../images/bi_caret-down-fill.svg') no-repeat 90%;
   padding-left:34px;
   font-size: 16px;
   font-weight: 400;
@@ -56,7 +56,7 @@
 
 .lang-select optgroup option[selected] {
   display: block;
-  background: url('../../assets/selected-check.svg') no-repeat / cover;
+  background: url('../../images/selected-check.svg') no-repeat / cover;
 }
 
 @media (min-width: 768px) {

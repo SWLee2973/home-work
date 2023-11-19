@@ -73,7 +73,7 @@
 /* 화살표 버튼 */
 .left-arrow {
     display: inline-block;
-    background: url('../../assets/left-arrow.svg') no-repeat;
+    background: url('../../images/left-arrow.svg') no-repeat;
     width: 22px;
     height: 16px;
     margin-right: 10px;
@@ -82,7 +82,7 @@
 
 .right-arrow {
   display: inline-block;
-  background: url('../../assets/right-arrow.svg') no-repeat;
+  background: url('../../images/right-arrow.svg') no-repeat;
   width: 22px;
   height: 16px;
   margin-left: 10px;
