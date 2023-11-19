@@ -33,7 +33,7 @@
 > misson-03.html에 컴포넌트 조립 및 배경 이미지 지정 후 제작 완료
 
 ## 4. 페이지 마크업
-```
+``` html
 <body>
   <header class="header">
     <!-- 기본 로고 -->
